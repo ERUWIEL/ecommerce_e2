@@ -1,0 +1,131 @@
+
+.nav-404 {
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-404 .logo {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav-404 .logo span {
+    color: var(--primary);
+}
+
+.nav-404 .logo:hover {
+    color: var(--text-main);
+    opacity: 0.85;
+}
+
+
+/* ── LAYOUT PRINCIPAL ───────────────────────────── */
+
+.error-page {
+    min-height: calc(100dvh - 10rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    padding: var(--space-xl) var(--space-md);
+    text-align: center;
+}
+
+
+/* ── VISUAL 404 ─────────────────────────────────── */
+
+.error-visual {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin: 0;
+    user-select: none;
+}
+
+.error-number {
+    font-family: var(--font-heading);
+    font-size: clamp(6rem, 20vw, 12rem);
+    font-weight: 900;
+    color: var(--primary);
+    line-height: 1;
+    /* sombra de profundidad con el color primario */
+    text-shadow:
+        0 0 40px color-mix(in srgb, var(--primary) 30%, transparent),
+        4px 4px 0px var(--surface-alt);
+}
+
+.error-wheel {
+    font-size: clamp(4rem, 15vw, 9rem);
+    line-height: 1;
+    color: var(--text-secondary);
+    /* animación de giro continuo */
+    animation: spin 6s linear infinite;
+    display: inline-block;
+    /* reducir brillo para que no compita con los 4s */
+    opacity: 0.6;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+
+/* ── CONTENIDO ──────────────────────────────────── */
+
+.error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    max-width: 42ch;
+}
+
+.error-content h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.error-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ── BOTONES ────────────────────────────────────── */
+
+.error-actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: var(--space-sm);
+}
+
+/* Los estilos de .btn, .btn-primary y .btn-outline
+   vienen de globals.css — no se repiten aquí       */
+
+
+/* ── FOOTER ─────────────────────────────────────── */
+
+.footer-404 {
+    padding: var(--space-md);
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.footer-404 p {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin: 0;
+}

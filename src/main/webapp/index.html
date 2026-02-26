@@ -1,10 +1,222 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <title>MotorLink | Tienda de Autopartes</title>
+    <link rel="stylesheet" href="css/styles.css  ">
+</head>
+
+<body>
+
+    <!-- HEADER MOBILE -->
+    <header class="site-header">
+        <nav class="nav-mobile">
+            <h1 class="logo">Motor<span>Link</span></h1>
+            <ul class="nav-icons">
+                <li><button class="icon-btn" aria-label="Buscar">🔍</button></li>
+                <li><button class="icon-btn" aria-label="Menú">☰</button></li>
+            </ul>
+        </nav>
+
+        <!-- NAV DESKTOP -->
+        <nav class="nav-desktop" aria-label="Navegación principal">
+            <h1 class="logo">Motor<span>Link</span></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="404.html">Catalogo</a></li>
+                <li><a href="404.html">Pedidos</a></li>
+                <li><a href="404.html">Ayuda</a></li>
+            </ul>
+            <ul class="nav-actions">
+                <li><button class="icon-btn" aria-label="Buscar">🔍</button></li>
+                <li><button class="icon-btn" aria-label="Carrito">🛒</button></li>
+                <li><button class="icon-btn" aria-label="Cuenta">👤</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h2 id="hero-title">Peak<br>Performance</h2>
+                <p>Neumaticos y suspenciones de calidad para aquellos que buscan llevar las cosas al extremo.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary">Explorar</button>
+                    <button class="btn-outline">Nuevos Productos</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-categories" aria-labelledby="cat-title">
+            <header class="section-header">
+                <h2 id="cat-title">Categorias</h2>
+            </header>
+
+            <ul class="categories">
+                <li class="category-item">
+                    <span class="category-icon" aria-hidden="true">⚙️</span>
+                    <span>Neumaticos</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-icon" aria-hidden="true">🔩</span>
+                    <span>Rines</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-icon" aria-hidden="true">📐</span>
+                    <span>Suspenciones</span>
+                </li>
+                <li class="category-item">
+                    <span class="category-icon" aria-hidden="true">🔧</span>
+                    <span>Accesorios</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-products" aria-labelledby="trend-title">
+            <header class="section-header">
+                <h2 id="trend-title">LO MAS TOP</h2>
+                <a href="404.html" class="see-all">VER TODO</a>
+            </header>
+
+            <ul class="products">
+                <li>
+                    <article class="product-card">
+                        <figure class="product-img">
+                            <img src="https://placehold.co/300x200/1a1f27/F7741A?text=Rim"
+                                alt="RS05-RR Matte Dark Gunmetal">
+                            <button class="wishlist-btn" aria-label="Agregar a favoritos">♡</button>
+                        </figure>
+                        <div class="product-info">
+                            <small class="product-brand">ENKEI SERIES</small>
+                            <h3 class="product-name">RS05-RR Matte Dark Gunmetal</h3>
+                            <footer class="product-footer">
+                                <strong class="product-price">$420.00</strong>
+                                <button class="cart-btn" aria-label="Agregar al carrito">🛒</button>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <figure class="product-img">
+                            <img src="https://placehold.co/300x200/1a1f27/F7741A?text=Coilover"
+                                alt="Road & Track Coilover Kit">
+                            <button class="wishlist-btn" aria-label="Agregar a favoritos">♡</button>
+                        </figure>
+                        <div class="product-info">
+                            <small class="product-brand">OHLINS TECH</small>
+                            <h3 class="product-name">Road &amp; Track Coilover Kit</h3>
+                            <footer class="product-footer">
+                                <strong class="product-price">$2,450.00</strong>
+                                <button class="cart-btn" aria-label="Agregar al carrito">🛒</button>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <figure class="product-img">
+                            <img src="https://placehold.co/300x200/1a1f27/F7741A?text=Brake"
+                                alt="GT-8 Big Brake Upgrade Kit">
+                            <button class="wishlist-btn" aria-label="Agregar a favoritos">♡</button>
+                        </figure>
+                        <div class="product-info">
+                            <small class="product-brand">BREMBO PERFORMANCE</small>
+                            <h3 class="product-name">GT-8 Big Brake Upgrade Kit</h3>
+                            <footer class="product-footer">
+                                <strong class="product-price">$3,120.00</strong>
+                                <button class="cart-btn" aria-label="Agregar al carrito">🛒</button>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <figure class="product-img">
+                            <img src="https://placehold.co/300x200/1a1f27/F7741A?text=Tire"
+                                alt="Pilot Sport 4S High Performance">
+                            <button class="wishlist-btn" aria-label="Agregar a favoritos">♡</button>
+                        </figure>
+                        <div class="product-info">
+                            <small class="product-brand">MICHELIN</small>
+                            <h3 class="product-name">Pilot Sport 4S High Performance</h3>
+                            <footer class="product-footer">
+                                <strong class="product-price">$285.00</strong>
+                                <button class="cart-btn" aria-label="Agregar al carrito">🛒</button>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="support" aria-labelledby="support-title">
+            <div class="support-content">
+                <h2 id="support-title">¿Necesitas Asistencia?</h2>
+                <p>Contáctanos para obtener ayuda con tu pedido o cualquier pregunta sobre nuestros productos.</p>
+                <button class="btn-dark">Contactar Soporte</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- BOTTOM NAV MOBILE -->
+    <nav class="bottom-nav" aria-label="Navegación inferior">
+        <ul>
+            <li><a href="404.html" aria-current="page"><span>🏠</span><span>Inicio</span></a></li>
+            <li><a href="404.html"><span>🔍</span><span>Buscar</span></a></li>
+            <li><a href="404.html"><span>🛒</span><span>Carrito</span></a></li>
+            <li><a href="404.html"><span>👤</span><span>Cuenta</span></a></li>
+        </ul>
+    </nav>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2 class="logo">Motor<span>Link</span></h2>
+                <p>
+                    La mejor tienda de accesorios de rendimiento para entusiastas de los autos. 
+                    Calidad, variedad y servicio excepcional en un solo lugar.
+                </p>
+            </div>
+            <nav aria-label="Help Center">
+                <h3>Centro de Ayuda</h3>
+                <ul>
+                    <li><a href="404.html">Política de Devoluciones</a></li>
+                    <li><a href="404.html">Rastrear mi Pedido</a></li>
+                    <li><a href="404.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+            <div class="footer-newsletter">
+                <h3>Subscripción</h3>
+                <p>Suscríbete para recibir las últimas novedades y ofertas exclusivas.</p>
+                <form class="newsletter-form" onsubmit="return false">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="Tu email">
+                    <button type="submit" class="btn-primary">Unirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <nav aria-label="Legal">
+                <ul class="footer-legal">
+                    <li><a href="404.html">Política de Privacidad</a></li>
+                    <li><a href="404.html">Términos de Servicio</a></li>
+                    <li><a href="404.html">Cookies</a></li>
+                </ul>
+            </nav>
+            <p>© 2026 MotorLink Performance Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>
