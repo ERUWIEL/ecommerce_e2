@@ -1,4 +1,4 @@
-package org.itson.ecomerce_e2.resources;
+package org.itson.ecommerce_e2.resources;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

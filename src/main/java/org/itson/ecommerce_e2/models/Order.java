@@ -1,4 +1,4 @@
-package models;
+package org.itson.ecommerce_e2.models;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import models.enums.OrderStatus;
+import org.itson.ecommerce_e2.models.enums.OrderStatus;
 
 /**
  * Orden de compra generada al hacer checkout.

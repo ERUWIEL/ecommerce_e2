@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
-    <!-- Define Persistence Unit -->
-    <persistence-unit name="my_persistence_unit">
-        
+
+    <persistence-unit name="ecommerce_pu" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- ── Entidades ────────────────────────────────────────────────── -->
+        <class>org.itson.ecommerce_e2.models.Address</class>
+        <class>org.itson.ecommerce_e2.models.Order</class>
+        <class>org.itson.ecommerce_e2.models.Product</class>
+        <class>org.itson.ecommerce_e2.models.Category</class>
+        <class>org.itson.ecommerce_e2.models.CartItem</class>
+        <class>org.itson.ecommerce_e2.models.PaymentMethod</class>
+        <class>org.itson.ecommerce_e2.models.User</class>
+        <class>org.itson.ecommerce_e2.models.OrderItem</class>
+        <class>org.itson.ecommerce_e2.models.Cart</class>
+        <class>org.itson.ecommerce_e2.models.Review</class>
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <!-- Driver MySQL — la URL/usuario/password los pone PersistenceProducer -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <!-- ── Hibernate ─────────────────────────────────────────────── -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql"   value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.connection.pool_size" value="5"/>
+        </properties>
+
     </persistence-unit>
+
 </persistence>

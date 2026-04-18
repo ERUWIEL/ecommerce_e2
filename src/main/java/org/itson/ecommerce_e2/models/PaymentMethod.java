@@ -1,4 +1,4 @@
-package models;
+package org.itson.ecommerce_e2.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -15,7 +15,7 @@ import jakarta.persistence.Table;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import models.enums.PaymentCategory;
+import org.itson.ecommerce_e2.models.enums.PaymentCategory;
 
 /**
  * Método de pago (tarjeta) registrado por un usuario.

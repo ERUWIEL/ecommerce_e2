@@ -1,4 +1,4 @@
-package models;
+package org.itson.ecommerce_e2.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

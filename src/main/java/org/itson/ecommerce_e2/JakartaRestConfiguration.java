@@ -1,4 +1,4 @@
-package org.itson.ecomerce_e2;
+package org.itson.ecommerce_e2;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;

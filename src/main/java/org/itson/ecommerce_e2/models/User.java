@@ -1,4 +1,4 @@
-package models;
+package org.itson.ecommerce_e2.models;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -14,7 +14,7 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
-import models.enums.Role;   // ← import correcto: nuestro propio enum
+import org.itson.ecommerce_e2.models.enums.Role;   // ← import correcto: nuestro propio enum
 
 /**
  * Representa a un usuario registrado en el sistema. Puede ser administrador

@@ -1,4 +1,4 @@
-package models.enums;
+package org.itson.ecommerce_e2.models.enums;
 
 /**
  * Ciclo de vida de una orden.
