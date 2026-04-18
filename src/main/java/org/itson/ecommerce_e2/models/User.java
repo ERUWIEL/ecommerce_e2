@@ -12,6 +12,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import org.itson.ecommerce_e2.models.enums.Role;   // ← import correcto: nuestro propio enum
@@ -26,7 +27,7 @@ import org.itson.ecommerce_e2.models.enums.Role;   // ← import correcto: nuest
  */
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

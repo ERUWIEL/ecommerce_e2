@@ -10,6 +10,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -26,7 +27,7 @@ import java.time.LocalDateTime;
         name = "reviews",
         uniqueConstraints = @UniqueConstraint(columnNames = {"user_id", "product_id"})
 )
-public class Review {
+public class Review implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

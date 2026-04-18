@@ -10,6 +10,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import java.io.Serializable;
 
 /**
  * Ítem dentro del carrito activo.
@@ -23,7 +24,7 @@ import jakarta.persistence.UniqueConstraint;
         name = "cart_items",
         uniqueConstraints = @UniqueConstraint(columnNames = {"cart_id", "product_id"})
 )
-public class CartItem {
+public class CartItem implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
