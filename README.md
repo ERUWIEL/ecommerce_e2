@@ -3,15 +3,14 @@
 <!-- ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) -->
 
 # Proyecto de aplicaciones web ecommerce con Java Tomcat
+<p>Aplicacion corriendo en contenedor docker con un enrutamiento a Cloudflare usando tunnels todo selfthosted</p>
+<p>Independencia total corriendo instancias propias de Bases de datos y Object Storage</p>
 
-<p>Proximamente disponible en <a href="https://ecommerce.erwbyel.org"> https://ecommerce.erwbyel.org </a> </p>
+<p>Ya disponible en <a href="https://ecommerce.erwbyel.org"> https://ecommerce.erwbyel.org </a> </p>
 
 <h3>Integrantes</h3>
 <ul>
   <li>Angel Erubiel Flores Jimenez - 00000252389</li>
-  <li>Luis Fernando Bautista Luna - 00000252081</li>
-  <li>Roberto Verdugo Beltran - 00000248285</li>
-  <li>Luis Enrique Valenzuela Chavez - 00000253255</li>
 </ul>
 
 
